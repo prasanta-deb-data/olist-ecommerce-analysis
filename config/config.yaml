@@ -1,0 +1,25 @@
+project:
+  name: "Olist E-commerce Analysis"
+  environment: "local"
+
+paths:
+  raw_data:
+    orders: "data/raw/orders.xlsx"
+    payments: "data/raw/order_payment.xlsx"
+    customers: "data/raw/customers.xlsx"
+
+  processed_data:
+    merged: "data/processed/merged_cleaned_data.csv"
+
+  outputs:
+    tables: "outputs/tables"
+    charts: "outputs/charts"
+
+logging:
+  level: "INFO"
+  file: "logs/pipeline.log"
+
+plots:
+  figsize:
+    width: 10
+    height: 5
